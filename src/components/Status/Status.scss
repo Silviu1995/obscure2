@@ -1,0 +1,71 @@
+.statusContainer{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../../public//assets//background_button2.jpg');
+        opacity: 0.9;
+        background-size: cover;
+        background-position: center center;
+        width: 360px;
+        margin-left: 100px;
+    .statusWrapper {
+        display: flex;
+        flex-direction: column;
+        
+        // background-image: url('../../../public/assets/background2.jpg');
+        gap: 5px;
+        background-color: rgba(0, 0, 0, 0.449);
+        
+        
+        
+        .serverStatus{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            padding: 5px;
+            gap: 10px;
+            color: rgba(208, 142, 61, 0.848);
+            background-color: rgba(0, 0, 0, 0.575);
+            border: 2px solid rgb(58, 23, 23);
+            .statusImage {
+                height: 50px;
+                    width: 50px;
+                    color: rgba(208, 142, 61, 0.848);
+                    padding: 2px;
+                    
+            }
+        }
+        .statusItem {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            border: 2px solid rgb(58, 23, 23);
+            background-color: rgba(0, 0, 0, 0.355);
+            gap: 10px;
+            .statusImageContainer{
+                border-right: 2px solid rgb(58, 23, 23);
+    
+                .statusImage {
+                    height: 50px;
+                    width: 50px;
+                    color: rgb(139, 123, 123);
+                    padding: 2px;
+                    }
+                    .statusImage:hover{
+                        height: 55px;
+                        width: 55px;
+                        color: rgb(255, 255, 255);
+                        
+                    }
+            }
+            
+            .statusInfo {
+                display: flex;
+                gap: 5px;
+                justify-items: center;
+                align-items: center;
+                color: rgb(227, 214, 214);
+            }
+            
+        }
+    }
+}

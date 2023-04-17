@@ -1,0 +1,39 @@
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import "./Navbar.scss";
+
+function Navbar() {
+	const navRef = useRef();
+
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
+
+	return (
+		<header>
+			<h3>OBSCURE 2</h3>
+			<nav ref={navRef}>
+        <Link to="/">Discord</Link>
+        <Link to="/download">Download</Link>
+        <Link to="/register">Register</Link>
+        <Link to="/presentation">Presentation</Link>
+        <Link to="/forum">Forum</Link>
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
+	);
+}
+
+export default Navbar;
